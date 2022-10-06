@@ -129,7 +129,7 @@ const Product = () => {
 
     const serachData=(e)=>{
         const searchWord=e.target.value
-        const newFilter=products.filter(v=>v.name.includes(searchWord.toLowerCase()))
+        const newFilter=products.filter(v=>v.name.toLowerCase().includes(searchWord.toLowerCase()))
         setFilterCategories(newFilter)
 
     }

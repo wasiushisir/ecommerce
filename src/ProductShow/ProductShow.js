@@ -12,7 +12,7 @@ const ProductShow = ({ product }) => {
 
     const [number,setNumber]=useState(null)
     return (
-        <div className='d-flex justify-content-between align-items-center mt-5'>
+        <div className='d-flex justify-content-between align-items-center mt-2'>
             <div>
                 <img style={{height:'60px',width:'60px'}} src={product.img} alt="" />
 
@@ -31,7 +31,7 @@ const ProductShow = ({ product }) => {
             </div>
             <div className='d-flex justify-content-center align-items-center ps-5 p-4'>
             <FaceSmileIcon style={{ color: 'green', height: '25px', width: '25px' }} className="" />
-                <p style={{color:'green'}} className='ms-2 '>{product?.stock}</p>
+                <p style={{color:'green'}} className='ms-2  pt-2'>{product?.stock}</p>
 
 
             </div>
